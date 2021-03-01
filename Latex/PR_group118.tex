@@ -1,0 +1,124 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2018
+
+% ready for submission
+% \usepackage{neurips_2018}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2018}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+\usepackage[preprint]{nips_2018}
+
+% to avoid loading the natbib package, add option nonatbib:
+%     \usepackage[nonatbib]{neurips_2018}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+
+\usepackage[english]{babel}
+\usepackage{amsmath} 
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{lineno}
+\usepackage{caption}
+\usepackage[T1]{fontenc}
+\usepackage{systeme}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,latexsym,tikz,url}
+\usepackage{epigraph,graphicx}
+\usepackage{listings}
+\usepackage{listingsutf8}
+\usepackage{color}
+\usepackage{float}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+\urlstyle{same}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=4
+}
+
+
+\setlength{\parindent}{0.0cm}
+\setlength{\parskip}{0.1cm}
+
+
+\title{DD2424 Group 118: \\ Peer-Review of Group 25}
+
+\author{%
+  Anton Stråhle \And Jan Alexandersson \And Fredrika Lundahl}
+
+\begin{document}
+	
+\maketitle
+
+\section{}
+
+The project examines Covid-19 detection in X-ray images using so called Siamese Neural Networks where they use X-ray data from Pneumonia patients in order to combat the lack of publicly available X-rays of Covid-19 patients.
+
+\section{}
+
+A very well written part of the report is the part that discusses the preprocessing of the images.
+
+\section{}
+
+A part of the report which was a bit confusing was the discussion regarding how the data was split into, training, validation and test sets. The decisions made here could have been motivated better as we feel that some were a bit unconventional, for example the usage of Pneumonia data in the case of validation when the ultimate goal is to detect the prevalence of Covid-19.
+
+\section{}
+
+Yes, as we had no previous knowledge of Siamese Neural Networks. The Method section which covers the architecture of the Siamese Neural Network thoroughly explains it and also includes some pictures which helps with the understanding.
+
+\section{}
+
+The most impressive result was what was shown in Figure 6 where the accuracies with and without batch normalization are shown.
+
+\section{}
+
+The mentioning of the symptom similarities between Pneumonia and Covid-19 which is mentioned in the Abstract as well as the usage of Pneumonia data in the training of a network that aims at detecting Covid-19 does to us signify that a network trained for Pneumonia detection should also perform well for Covid-19 detection. This does not turn out to be the case as we can see in Table 2 where the testing accuracy for Pneumonia is about 80\% and about 57\% for Covid-19.
+
+\section{}
+
+Our initial thought was that the main experiments should be redone with Covid-19 data in the validation set as the hyperparameter would have been tuned towards Covid-19 detection instead of towards Pneumonia detection.
+
+Secondly it would have been interesting to examine if there are any differences between Covid-19 X-rays and Pneumonia X-rays that a CNN can pick up on even though the symptoms are assumed to be very similar. Given our newfound understanding of Siamese Neural Networks we believe that this could have been done by seeing if such a network could be able to distinguish between Covid-19 X-rays and Pneumonia X-rays.
+
+\section{}
+
+We like the quite novel and very unique approach to problem of Covid-19 detection used in this project which differs quite a bit from most other Covid-19 projects that simply used different classifiers. From their choice of such a unique approach and the related work section, it is quite clear that a lot of work was put into the preparations for the actual project.
+
+We also like the fact that the group was very thorough and detailed in the explanation of their working process. 
+
+\section{}
+
+Given that our projects are of very different nature we sadly do not have any sources to share as we do not believe that the data augmentations techniques that we covered could be used to great effect in the case of the Covid-19 detection discussed.
+
+\end{document}

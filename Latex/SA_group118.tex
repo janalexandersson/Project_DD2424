@@ -1,0 +1,142 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2018
+
+% ready for submission
+% \usepackage{neurips_2018}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2018}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+\usepackage[preprint]{nips_2018}
+
+% to avoid loading the natbib package, add option nonatbib:
+%     \usepackage[nonatbib]{neurips_2018}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+
+\usepackage[english]{babel}
+\usepackage{amsmath} 
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{lineno}
+\usepackage{caption}
+\usepackage[T1]{fontenc}
+\usepackage{systeme}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,latexsym,tikz,url}
+\usepackage{epigraph,graphicx}
+\usepackage{listings}
+\usepackage{listingsutf8}
+\usepackage{color}
+\usepackage{float}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+\urlstyle{same}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=4
+}
+
+
+\setlength{\parindent}{0.0cm}
+\setlength{\parskip}{0.1cm}
+
+
+\title{DD2424 Group 118: \\ The mechanisms, powers and limitations of some Data Augmentation techniques. \\ Self-Assessment}
+
+\author{%
+  Anton Stråhle \And Jan Alexandersson \And Fredrika Lundahl}
+
+\begin{document}
+	
+\maketitle
+
+\section*{Skills}
+
+\subsection*{Anton (Basic CNN, ResNet50)}
+
+\begin{itemize}
+ \item I feel like I developed a good understanding of the Tensorflow and Keras libraries and have gotten a better understanding of the different components of neural networks after implementing the basic CNN architectures as well as ResNet50. 
+ \item After this project I got a better general understanding of transfer learning after examining different ways to implement ResNet50 (as well as reading about and examining other networks to implement such as MobileNetv even though did not make it into the final project). 
+ \item In general I think that this project has given me a good understanding of why and for what purpose you should use the different augmentations examined.
+ \item Although we had some initial troubles using GCP, I now feel very comfortable using the service.
+\end{itemize}
+
+
+\subsection*{Jan (Mixup, Fourier Transforms)}
+
+\begin{itemize}
+  \item I have gained experience in how to implement neural networks in practice using Tensorflow and Keras without much previous experience programming using Python. Specifically I learned how to make a custom ImageGenerator in Tensorflow.
+
+  \item I have read about and understand the basics of Manifold Mixup and how one can achieve better results by performing Mixup in an intermediate layer where feature space is more aligned, compared to input space, even if we did not implemented it in our project.
+
+  \item I have learned about the regularizing effect of Mixup and that one needs to be careful when using the combination of Dropout and Mixup. Since both regularize, their respective parameters have to be considered together.
+\end{itemize}
+
+\subsection*{Fredrika (Basic Augmentations, Random Erasing, Test Architecture)}
+
+\begin{itemize}
+	\item I have gained understanding in how to set up a deep learning network in Tensorflow and how to implement augmentations on the run via the ImageGenerator.
+	
+	\item I have gained insight in when, why and how to use data augmentations of different types and which augmentations that may be appropriate or inappropriate at certain situations as well as which amount of adaption and tuning that is needed.
+	
+	\item I have learned how to use a Google Cloud computing engine, where I have run most of the tests on the different augmentations.
+	
+	
+	
+	
+\end{itemize}
+
+\section*{Grade}
+
+For this project we feel that we deserve a B. 
+
+\subsection*{Motivation}
+
+\begin{itemize}
+ \item We feel that we gave good theoretical backgrounds for the different augmentations examined and successfully implemented these augmentations in practice. 
+ \item The implementation of the training on spatial frequency data, obtained using the discrete 2D Fourier Transform, which at least to us seemed reasonable to attempt, although it achieved some lack luster results due to limitations in tuning.
+ \item The evaluation of the techniques using both a standard architecture and a transfer learning architecture as well as the discussion in regards to the differing results for both cases.
+ \item The coverage of a quite wide array of different techniques in order to get a general understanding of augmentations and to know when and why they should be implemented.
+ \item We gave explanations describing how our presumed shortfalls could have been addressed.
+ \item We feel that we have a clearly written report which gives the appropriate background, highlights the important results and gives a fair amount of discussion.
+ 
+ 
+\end{itemize}
+
+
+
+
+
+
+\end{document}

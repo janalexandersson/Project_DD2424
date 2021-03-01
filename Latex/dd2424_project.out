@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Basic Data Augmentation}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Mixup}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Random Erasing}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Data}{}% 6
+\BOOKMARK [1][-]{section.4}{Methods}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Basic Data Augmentations}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Mixup}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Random Erasing}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.4}{Fourier Transformation}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.5}{Underlying CNNs}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Experiments}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Basic Augmentation}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Mixup}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Random Erasing}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.4}{The Fourier Transform}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 18
